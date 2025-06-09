@@ -380,8 +380,23 @@ const CarSelector = ({ selectedCar, onCarSelect }: CarSelectorProps) => {
     });
   };
 
-  const getStatColor = (value: number, max: number) => {
-    const percentage = (value / max) * 100;
+  const getStatColor = (value: number, statType: string) => {
+    let max: number;
+    let percentage: number;
+    
+    switch (statType) {
+      case 'handling':
+      case 'downforce':
+      case 'efficiency':
+        max = 100;
+        percentage = (value / max) * 100;
+        break;
+      default:
+        // For handling, downforce, efficiency (0-100 scale)
+        percentage = value;
+        break;
+    }
+    
     if (percentage >= 80) return "bg-racing-green";
     if (percentage >= 60) return "bg-yellow-500";
     return "bg-racing-red";
@@ -454,7 +469,7 @@ const CarSelector = ({ selectedCar, onCarSelect }: CarSelectorProps) => {
             </div>
             <div className="w-full bg-secondary rounded-full h-2">
               <div 
-                className={`h-2 rounded-full ${getStatColor(car.handling, 100)}`}
+                className={`h-2 rounded-full ${getStatColor(car.handling, 'handling')}`}
                 style={{ width: `${car.handling}%` }}
               ></div>
             </div>
@@ -467,7 +482,7 @@ const CarSelector = ({ selectedCar, onCarSelect }: CarSelectorProps) => {
             </div>
             <div className="w-full bg-secondary rounded-full h-2">
               <div 
-                className={`h-2 rounded-full ${getStatColor(car.downforce, 100)}`}
+                className={`h-2 rounded-full ${getStatColor(car.downforce, 'downforce')}`}
                 style={{ width: `${car.downforce}%` }}
               ></div>
             </div>
@@ -480,7 +495,7 @@ const CarSelector = ({ selectedCar, onCarSelect }: CarSelectorProps) => {
             </div>
             <div className="w-full bg-secondary rounded-full h-2">
               <div 
-                className={`h-2 rounded-full ${getStatColor(car.efficiency, 100)}`}
+                className={`h-2 rounded-full ${getStatColor(car.efficiency, 'efficiency')}`}
                 style={{ width: `${car.efficiency}%` }}
               ></div>
             </div>
