@@ -70,6 +70,116 @@ const F1_TRACKS = [
     difficulty: "Medium",
     image: "🇧🇷",
     characteristics: ["Anti-clockwise", "Elevation Changes", "Senna S"]
+  },
+  {
+    id: "hungary",
+    name: "Hungaroring",
+    location: "Budapest, Hungary",
+    length: "4.381 km",
+    lapRecord: "1:16.627",
+    turns: 14,
+    difficulty: "High",
+    image: "🇭🇺",
+    characteristics: ["Twisty", "Overtaking Difficult", "Monaco-like"]
+  },
+  {
+    id: "singapore",
+    name: "Marina Bay Street Circuit",
+    location: "Singapore",
+    length: "5.063 km",
+    lapRecord: "1:35.867",
+    turns: 23,
+    difficulty: "Extreme",
+    image: "🇸🇬",
+    characteristics: ["Night Race", "Street Circuit", "Humidity Challenge"]
+  },
+  {
+    id: "bahrain",
+    name: "Bahrain International Circuit",
+    location: "Sakhir, Bahrain",
+    length: "5.412 km",
+    lapRecord: "1:31.447",
+    turns: 15,
+    difficulty: "Medium",
+    image: "🇧🇭",
+    characteristics: ["Desert Track", "DRS Zones", "Good Overtaking"]
+  },
+  {
+    id: "canada",
+    name: "Circuit Gilles Villeneuve",
+    location: "Montreal, Canada",
+    length: "4.361 km",
+    lapRecord: "1:13.078",
+    turns: 14,
+    difficulty: "Medium",
+    image: "🇨🇦",
+    characteristics: ["Semi-street", "Wall of Champions", "Long Straights"]
+  },
+  {
+    id: "austria",
+    name: "Red Bull Ring",
+    location: "Spielberg, Austria",
+    length: "4.318 km",
+    lapRecord: "1:05.619",
+    turns: 10,
+    difficulty: "Medium",
+    image: "🇦🇹",
+    characteristics: ["Short Track", "Alpine Setting", "Steep Elevation"]
+  },
+  {
+    id: "mexico",
+    name: "Autódromo Hermanos Rodríguez",
+    location: "Mexico City, Mexico",
+    length: "4.304 km",
+    lapRecord: "1:17.774",
+    turns: 17,
+    difficulty: "Medium",
+    image: "🇲🇽",
+    characteristics: ["High Altitude", "Reduced Downforce", "Stadium Section"]
+  },
+  {
+    id: "australia",
+    name: "Albert Park Circuit",
+    location: "Melbourne, Australia",
+    length: "5.278 km",
+    lapRecord: "1:20.260",
+    turns: 14,
+    difficulty: "Medium",
+    image: "🇦🇺",
+    characteristics: ["Semi-street", "Lake Views", "Season Opener"]
+  },
+  {
+    id: "netherlands",
+    name: "Circuit Zandvoort",
+    location: "Zandvoort, Netherlands",
+    length: "4.259 km",
+    lapRecord: "1:11.097",
+    turns: 14,
+    difficulty: "High",
+    image: "🇳🇱",
+    characteristics: ["Banked Corners", "Coastal Track", "Narrow Circuit"]
+  },
+  {
+    id: "miami",
+    name: "Miami International Autodrome",
+    location: "Miami, Florida",
+    length: "5.410 km",
+    lapRecord: "1:31.361",
+    turns: 19,
+    difficulty: "Medium",
+    image: "🇺🇸",
+    characteristics: ["Street Circuit", "Stadium Complex", "Modern Layout"]
+  },
+  {
+    id: "imola",
+    name: "Autodromo Enzo e Dino Ferrari",
+    location: "Imola, Italy",
+    length: "4.909 km",
+    lapRecord: "1:15.484",
+    turns: 19,
+    difficulty: "High",
+    image: "🏛️",
+    characteristics: ["Historic Track", "Challenging Layout", "Tamburello Corner"]
   }
 ];
 

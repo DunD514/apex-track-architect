@@ -9,6 +9,7 @@ import { toast } from "sonner";
 import CustomCarDesigner from "./CustomCarDesigner";
 
 const F1_CARS = [
+  // Current F1 Cars
   {
     id: "red-bull-rb19",
     name: "Red Bull RB19",
@@ -106,6 +107,72 @@ const F1_CARS = [
     description: "French engineering with Renault power unit"
   },
   {
+    id: "williams-fw45",
+    name: "Williams FW45",
+    team: "Williams Racing",
+    year: 2023,
+    engine: "Mercedes",
+    topSpeed: 332,
+    acceleration: 3.2,
+    handling: 78,
+    weight: 798,
+    downforce: 75,
+    efficiency: 82,
+    category: "Current",
+    color: "bg-blue-400",
+    description: "Historic team fighting back to competitiveness"
+  },
+  {
+    id: "alphatauri-at04",
+    name: "AlphaTauri AT04",
+    team: "Scuderia AlphaTauri",
+    year: 2023,
+    engine: "Honda RBPT",
+    topSpeed: 330,
+    acceleration: 3.3,
+    handling: 76,
+    weight: 798,
+    downforce: 73,
+    efficiency: 80,
+    category: "Current",
+    color: "bg-slate-600",
+    description: "Red Bull's sister team with Honda power"
+  },
+  {
+    id: "alfa-romeo-c43",
+    name: "Alfa Romeo C43",
+    team: "Alfa Romeo",
+    year: 2023,
+    engine: "Ferrari",
+    topSpeed: 328,
+    acceleration: 3.4,
+    handling: 74,
+    weight: 798,
+    downforce: 71,
+    efficiency: 78,
+    category: "Current",
+    color: "bg-red-800",
+    description: "Italian heritage with Ferrari power unit"
+  },
+  {
+    id: "haas-vf-23",
+    name: "Haas VF-23",
+    team: "Haas F1 Team",
+    year: 2023,
+    engine: "Ferrari",
+    topSpeed: 325,
+    acceleration: 3.5,
+    handling: 72,
+    weight: 798,
+    downforce: 68,
+    efficiency: 76,
+    category: "Current",
+    color: "bg-gray-600",
+    description: "American team with Ferrari engine partnership"
+  },
+
+  // Historic Legendary Cars
+  {
     id: "mclaren-mp4-4",
     name: "McLaren MP4/4",
     team: "McLaren",
@@ -170,6 +237,56 @@ const F1_CARS = [
     description: "Revolutionary ground effect aerodynamics"
   },
   {
+    id: "ferrari-f1-75",
+    name: "Ferrari F1-75",
+    team: "Scuderia Ferrari",
+    year: 1975,
+    engine: "Ferrari",
+    topSpeed: 295,
+    acceleration: 4.5,
+    handling: 70,
+    weight: 575,
+    downforce: 55,
+    efficiency: 50,
+    category: "Historic",
+    color: "bg-red-900",
+    description: "Niki Lauda's championship-winning Ferrari"
+  },
+  {
+    id: "tyrrell-p34",
+    name: "Tyrrell P34",
+    team: "Tyrrell Racing",
+    year: 1976,
+    engine: "Ford Cosworth",
+    topSpeed: 290,
+    acceleration: 4.8,
+    handling: 68,
+    weight: 570,
+    downforce: 50,
+    efficiency: 48,
+    category: "Historic",
+    color: "bg-blue-900",
+    description: "Unique six-wheeled F1 car with four front wheels"
+  },
+  {
+    id: "brabham-bt46b",
+    name: "Brabham BT46B",
+    team: "Brabham",
+    year: 1978,
+    engine: "Alfa Romeo",
+    topSpeed: 305,
+    acceleration: 4.0,
+    handling: 72,
+    weight: 590,
+    downforce: 65,
+    efficiency: 52,
+    category: "Historic",
+    color: "bg-yellow-700",
+    description: "The controversial 'fan car' that won once and was banned"
+  },
+
+  // Future Concept Cars
+  {
     id: "concept-2030",
     name: "F1 Concept 2030",
     team: "Future Tech",
@@ -200,6 +317,38 @@ const F1_CARS = [
     category: "Concept",
     color: "bg-cyan-500",
     description: "Theoretical maximum performance vehicle"
+  },
+  {
+    id: "aero-dynamics-2040",
+    name: "AeroDynamics 2040",
+    team: "AeroTech Racing",
+    year: 2040,
+    engine: "Hydrogen Fuel Cell",
+    topSpeed: 390,
+    acceleration: 1.5,
+    handling: 99,
+    weight: 600,
+    downforce: 97,
+    efficiency: 99,
+    category: "Concept",
+    color: "bg-teal-500",
+    description: "Zero-emission hydrogen-powered F1 prototype"
+  },
+  {
+    id: "neural-racer-2045",
+    name: "Neural Racer 2045",
+    team: "AI Racing Systems",
+    year: 2045,
+    engine: "Neural Network AI",
+    topSpeed: 450,
+    acceleration: 0.8,
+    handling: 100,
+    weight: 500,
+    downforce: 100,
+    efficiency: 100,
+    category: "Concept",
+    color: "bg-violet-600",
+    description: "AI-driven adaptive performance optimization"
   }
 ];
 
